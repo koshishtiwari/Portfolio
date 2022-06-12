@@ -4,8 +4,6 @@
     box-sizing: border-box;
   }
 
-  
- 
   @font-face {
     src: url("https://www.axis-praxis.org/fonts/webfonts/MetaVariableDemo-Set.woff2")
       format("woff2");
@@ -14,25 +12,41 @@
     font-weight: normal;
   }
   
-  body {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    display: flex;
+  section {
+    height: 100vh;
+    width: 100vw;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #ffffff;
-    width: 100vw;
-    height: 100vh;
+    scroll-snap-align: start;
+    scroll-behavior: smooth;
+
   }
+  .one {
+    display: grid;
+    place-items: center;
+    background-color: #ffffff;
+  }
+  .two {
+    background-color: #f0a4bf;
+    display: grid;
+
+  }
+
+  .container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+    width: 100vw;
+  }
+
   
   main {
+  
     transition: all 0.5s;
     -webkit-text-stroke: 4px #000000;
     font-variation-settings: "wght" 900, "ital" 1;
-    font-size: 12rem;
+    font-size: clamp(110px, 12vw, 250px);
     text-align: center;
-    margin-top: 15vh;
     color: transparent;
     font-family: "Meta", sans-serif;
    
@@ -50,18 +64,12 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
   }
-  html,body{
-    display: grid;
-    height: 100%;
-    width: 100%;
-    place-items: center;
-  }
+
   .wrapper .button{
     display: inline-block;
-    margin-top: 30vh;
     height: 60px;
     width: 60px;
-    margin: 20px 5px;
+    margin: 5px 5px;
     overflow: hidden;
     background: #fff;
     border-radius: 40px;
@@ -89,7 +97,7 @@
     background: #1DA1F2;
   }
   .wrapper .button:nth-child(3):hover .icon{
-    background: #E1306C;
+    background: #ef8fb0;
   }
   .wrapper .button:nth-child(4):hover .icon{
     background: #333;
@@ -106,10 +114,23 @@
     color: #fff;
   }
   
+  .two h1 {
+    font-size: clamp(30px, 5vw, 50px);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #fff;
+  }
   
+  .two p {
+    font-size: clamp(10px, 2vw, 20px);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    padding: 10px 100px 10px 100px;
+  }
   .credit {
     font-family: 'marsden slim medium';  
-    font-size: normal;
+    font-size: clamp(12px, 1vw, 15px);
     letter-spacing: -1px;
     font-stretch: 50%;
 }
