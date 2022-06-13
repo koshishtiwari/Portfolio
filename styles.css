@@ -65,6 +65,8 @@
   .myNameHover:hover {
     font-variation-settings: "wght" 900, "ital" 1;
     text-shadow: none;
+    color:#4ab9f1
+
   }
  
   
@@ -153,13 +155,4 @@
     font-stretch: 50%;
 }
 
-.credit span {
-  display: inline-block;
-  -webkit-transition: all 0.1s ease-out;
-
-}
-.credit span:hover {
-  -webkit-transform: scale(1.5);
-  cursor: pointer;
-}
   
