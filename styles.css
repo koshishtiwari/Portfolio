@@ -29,7 +29,7 @@
     background-color: #ffffff;
   }
   .two {
-    background-color: #f0a4bf;
+    background-color: #4ab9f1;
     display: grid;
 
   }
@@ -57,6 +57,7 @@
     .myName:hover {
       font-variation-settings: "wght" 900, "ital" 1;
       text-shadow: none;
+      color:#4ab9f1
     }
   }
 
@@ -127,23 +128,38 @@
   }
   
   .two h1 {
-    font-size: clamp(30px, 5vw, 60px);
-    font-family: 'Poppins', sans-serif;
+    font-size: clamp(30px, 5vw, 80px);
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     color: #fff;
+
   }
   
   .two p {
-    font-size: clamp(12px, 2vw, 20px);
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    color: #fff;
-    padding: 10px 100px 10px 100px;
+    margin-top: 10px;
+    display: inline-block;
+    text-align: left;
+    text-rendering: optimizeSpeed;
+    font-size: clamp(5px, 4vw, 25px);
+    box-sizing: border-box;
+    width: 60%;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(255, 255, 255);
   }
   .credit {
     font-family: 'marsden slim medium';  
     font-size: clamp(12px, 1vw, 15px);
     letter-spacing: -1px;
     font-stretch: 50%;
+}
+
+.credit span {
+  display: inline-block;
+  -webkit-transition: all 0.1s ease-out;
+
+}
+.credit span:hover {
+  -webkit-transform: scale(1.5);
+  cursor: pointer;
 }
   
