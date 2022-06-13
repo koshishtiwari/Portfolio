@@ -1,4 +1,4 @@
-Skip to content
+
 
 * {
     margin: 0;
@@ -42,23 +42,28 @@ Skip to content
   }
 
   
-  main {
-  
+  .myName {
+    margin-top: 10vh;
     transition: all 0.5s;
     -webkit-text-stroke: 4px #000000;
-    font-variation-settings: "wght" 900, "ital" 1;
+    font-variation-settings: "wght" 100, "ital" 0;
     font-size: clamp(110px, 12vw, 250px);
     text-align: center;
     color: transparent;
     font-family: "Meta", sans-serif;
    
   }
-  
-  @media (hover:hover) and (pointer:fine) {
-    main:hover {
-      font-variation-settings: "wght" 100, "ital" 0;
+  @media screen and (min-width: 991px) {
+    .myName:hover {
+      font-variation-settings: "wght" 900, "ital" 1;
       text-shadow: none;
     }
+  }
+
+
+  .myNameHover:hover {
+    font-variation-settings: "wght" 900, "ital" 1;
+    text-shadow: none;
   }
  
   
@@ -122,14 +127,14 @@ Skip to content
   }
   
   .two h1 {
-    font-size: clamp(30px, 5vw, 50px);
+    font-size: clamp(30px, 5vw, 60px);
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     color: #fff;
   }
   
   .two p {
-    font-size: clamp(10px, 2vw, 20px);
+    font-size: clamp(12px, 2vw, 20px);
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     color: #fff;
